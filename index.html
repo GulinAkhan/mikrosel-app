@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>MyProject</title>
+    <link rel="stylesheet" href="style.css"></head>
+</head>
+<body>
+    <div class="container">
+     <div class="row headPart">
+        <div class="headPartLeft">
+            LINE 5
+        </div>
+        <h2 class="headPartRight"></h2>
+     </div>
+     <div class="line">
+        <img src="./assets/Line 1.svg"/>
+     </div>
+     <div class="secondaryPart row">
+        <div class="row secondaryFirstPart">
+            <div class="firstColumn">
+                <div class="row">
+                    <div>
+                        <h2>LINE STATUS</h2>
+                    </div>
+                    <div>
+                        <h3>Production Time</h3>
+                        <p>07:48:15</p>
+                    </div>
+                </div>
+                <div class="row firstColumnOfSecond">
+                    <div>
+                        <h3>Actual Quantity</h3>
+                        <p>654</p>
+                    </div>
+                    <div>
+                            <h2 class="statisticsValue">21.5 %</h2>            
+                    </div>
+                    <div>
+                        <h3>Target Quantity</h3>
+                        <p>3,035</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <img src="./assets/Group 12.svg"/>
+                 </div>
+            </div>            
+            <div class="secondColumn">
+                <p>OEE</p>
+                <h2>53.3%</h2>
+            </div>
+        </div>
+        <div class="secondaryPartSecond row">
+            <div class="secondaryLine ">
+                 <img src="./assets/Line 2.svg"/>
+            </div>
+            <div class="secondaryPartContent">
+                <h2>STATUS OTHER LINES</h2>
+                <div class="row">
+                    <div class="percentBox">
+                        <h4>LINE 1</h4>
+                        <div class="percentLine"></div>
+                        <div class="percentCenter">
+                            5%
+                        </div>
+                        <p>NX T1</p>
+                    </div>
+                    <div class="percentBox">
+                        <h4>LINE 2</h4>
+                        <div class="percentLine"></div>
+                        <div class="percentCenter">
+                            60%
+                        </div>
+                        <p>BT R2</p>
+                    </div>
+                    <div class="percentBox">
+                        <h4>LINE 3</h4>
+                        <div class="percentLine"></div>
+                        <div class="percentCenter">
+                            52%
+                        </div>
+                        <p>KV H1</p>
+                    </div>
+                    <div class="percentBox">
+                        <h4>LINE 4</h4>
+                        <div class="percentLine"></div>
+                        <div class="percentCenter">
+                            53%
+                        </div>
+                        <p>BT R4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="lastContainer">
+         <div class="lastContainerFirst">
+            <div class="row">
+                <div>
+                    <h2>CURRENT ORDER</h2>
+                    <div class="lastContainerContentGrid">
+                        <div class="contentBox">
+                        <h2>PO No.</h2>
+                        <p>62680300</p>
+                        </div>
+                        <div class="contentBox">
+                            <h2>Parts No.</h2>
+                            <p>20062000</p>
+                        </div>
+                        <div class="contentBox">
+                                <h2>PO Start</h2>
+                                <p>2020-11-19</p>
+                        </div>
+                                <div class="contentBox">
+                                    <h2>Target Quantity</h2>
+                                    <p>3,035</p>
+                                    </div>
+                                    <div class="contentBox">
+                                        <h2>Parts Description</h2>
+                                        <p>Part-0-XA-445</p>
+                                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>RESPONSIBLE STAFF</h2>
+                    <p>Marco  DaSilva</p>
+                    <div class="lastContainerImage">
+                        <img src="./assets/Vector-Worker-PNG-Free-Download 1.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>PRODUCTION HISTORY</h2>
+                <div class="lastContainerImage">
+                    <img src="./assets/Rectangle 3.svg"/>
+                </div>
+            </div>
+         </div>
+         <div class="newsContainer">
+            <h2>CORPORATE NEWS</h2>
+            <div class="newsContainerContent">
+                  <div class="newsBox">
+                    <h2>
+                        Congratulations! 100 days without a serious accident!
+                    </h2>
+                    <p>
+                        2020-09-02
+                    </p>
+                    <div class="newsLine"></div>  
+                  </div>
+                  <div class="newsBox">
+                    <h2>
+                        Reminder: Every shift has to close the windows
+                    </h2>
+                    <p>
+                        2020-08-30
+                    </p>
+                    <div class="newsLine"></div>  
+                  </div>
+                  <div class="newsBox">
+                    <h2>
+                        Starting next month new oil can only be ordered from corporate
+                    </h2>
+                    <p>
+                        2020-08-29
+                    </p>
+                    <div class="newsLine"></div>  
+                  </div>
+                  <div class="newsBox">
+                    <h2>
+                        IMPORTANT information: Only use point no. 310-0802 frow now on.
+                    </h2>
+                    <p>
+                        2020-08-28
+                    </p>
+                    <div class="newsLine"></div>  
+                  </div>
+            </div>
+         </div>
+     </div>
+    </div>
+   <script>
+      let now = new Date();
+
+      let h2 = document.querySelector("h2");
+
+      let date = now.getDate();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let year = now.getFullYear();
+
+      let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      let day = days[now.getDay()];
+
+      let months = [
+        "Jan",
+        "Feb",
+        "March",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ];
+      let month = months[now.getMonth()];
+
+      h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}, ${year}`;
+    </script>
+</body>
+</html>

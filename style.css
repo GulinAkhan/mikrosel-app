@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  background-color: rgb(52, 105, 154);
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.headPart {
+  padding-top: 50px;
+}
+.headPartLeft {
+  width: 400px;
+  color: white;
+  font-size: 50px;
+  background-color: rgb(17, 63, 103);
+  text-align: center;
+}
+.headPartRight {
+  color: white;
+  font-size: 50px;
+  padding-right: 30px;
+}
+.line {
+  width: 100%;
+  padding-top: 10px;
+}
+.line img {
+  width: 100%;
+  height: 100%;
+}
+.secondaryPart {
+  background-color: rgb(17, 63, 103);
+  padding: 20px 80px;
+}
+.secondaryFirstPart {
+  width: 70%;
+}
+.secondaryPartSecond {
+  width: 25%;
+}
+.secondaryPartContent {
+  width: 100%;
+  padding-left: 10px;
+}
+.secondaryFirstPart .firstColumn {
+  width: 75%;
+}
+.secondaryFirstPart .firstColumnOfSecond {
+  padding-top: 20px;
+}
+.secondColumn {
+  width: 30%;
+  height: 100%;
+  padding-left: 30px;
+}
+.secondaryFirstPart .secondColumn p {
+  color: white;
+  font-size: 24px;
+}
+.secondaryFirstPart .secondColumn h2 {
+  color: white;
+  font-size: 52px;
+  padding-top: 30px;
+}
+.statisticsValue {
+  font-size: 36px;
+}
+.percentLine {
+  width: 100%;
+  height: 3px;
+  background-color: #84d04d;
+  border-radius: 5px;
+}
+.percentCenter {
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 10px;
+  border: 4px solid rgba(59, 127, 140, 1);
+  margin-top: 10px;
+}
+.percentBox h4 {
+  text-align: center;
+}
+.percentBox p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+}
+/* LastContainer */
+.lastContainer {
+  display: flex;
+  padding: 20px 80px;
+  color: white;
+}
+.lastContainerFirst {
+  width: 75%;
+}
+.lastContainerContentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 15px;
+}
+.lastContainerContentGrid .contentBox h2 {
+  font-size: 16px;
+}
+.lastContainerContentGrid .contentBox p {
+  font-size: 20px;
+}
+.lastContainerImage {
+  margin-top: 15px;
+}
+/* News */
+.newsContainer {
+  padding-left: 40px;
+}
+.newsContainerContent {
+  padding-top: 10px;
+}
+.newsBox h2 {
+  font-size: 20px;
+}
+.newsBox p {
+  font-size: 16px;
+  padding-top: 5px;
+}
+.newsLine {
+  background-color: white;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
